@@ -63,7 +63,7 @@ export default async function Contacts({
 					// Extract domain from url.
 					label: s.url.split("/")[2],
 					// Extract last part of the url. Might not make sense in some cases.
-					// handle: s.url.split("/").pop(),
+					handle: "Hanish Rishen",
 				});
 				break;
 		}
