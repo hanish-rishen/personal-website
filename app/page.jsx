@@ -38,20 +38,6 @@ const UserText = async ({ promise }) => {
 	);
 };
 
-const TryYourself = ({ customUsername }) => {
-
-	const href = customUsername ? '/' : '/search';
-
-	return <Link
-		href={href}
-		className="text-lg duration-500 text-zinc-500 hover:text-zinc-300 border-dashed p-2 rounded border-2 border-zinc-500 hover:border-zinc-300"
-	>
-		{
-			customUsername ? 'Showing: ' + customUsername + ', click to cancel ❌' : 'Try yourself'
-		}
-	</Link>;
-};
-
 const LandingComponent = async ({ searchParams: { customUsername } }) => {
 
 	const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
@@ -70,7 +56,6 @@ const LandingComponent = async ({ searchParams: { customUsername } }) => {
 							{item.name}
 						</Link>
 					))}
-					<TryYourself customUsername={customUsername} />
 				</ul>
 			</nav>
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
