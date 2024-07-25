@@ -31,12 +31,24 @@ export const Navigation = () => {
 				}`}
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
-					<div className="flex justify-between gap-8 text-base">
+					<div className="flex justify-between gap-3 text-base">
 						<Link
 							href={"/projects" + (customUsername ? `?customUsername=${customUsername}` : '')}
 							className="duration-200 text-zinc-400 hover:text-zinc-100"
 						>
 							Projects
+						</Link>
+						<Link
+							href={"/skills" + (customUsername ? `?customUsername=${customUsername}` : '')}
+							className="duration-200 text-zinc-400 hover:text-zinc-100"
+						>
+							Skills
+						</Link>
+						<Link
+							href={"/experience" + (customUsername ? `?customUsername=${customUsername}` : '')}
+							className="duration-200 text-zinc-400 hover:text-zinc-100"
+						>
+							Experience
 						</Link>
 						<Link
 							href={"/contact" + (customUsername ? `?customUsername=${customUsername}` : '')}

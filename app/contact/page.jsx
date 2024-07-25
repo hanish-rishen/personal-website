@@ -44,7 +44,12 @@ export default async function Contacts({
 					href: s.url,
 					label: s.provider,
 					// Extract last aprt of the url.
-					handle: "HANISH RISHEN SURESH KUMAR",
+					handle: (
+						<>
+							HANISH RISHEN<br />
+							SURESH KUMAR
+						</>
+					),
 				});
 				break;
 			case "twitter":
