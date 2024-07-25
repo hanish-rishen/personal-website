@@ -1,6 +1,7 @@
 import { MarkGithubIcon, PersonIcon, StarIcon } from '@primer/octicons-react';
 import Link from "next/link";
 import { Navigation } from "../components/nav";
+import SuspenseWrapper from '../components/SuspenseWrapper';
 import { Card } from "../components/card";
 
 export const runtime = 'nodejs';
@@ -17,7 +18,9 @@ const skills = [
 export default function Skills() {
 	return (
 		<div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
-            <Navigation/>
+            <SuspenseWrapper>
+              <Navigation/>
+            </SuspenseWrapper>
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-32 sm:grid-cols-3 lg:gap-16 xl:mt-32">
 					{skills.map((skill) => (
