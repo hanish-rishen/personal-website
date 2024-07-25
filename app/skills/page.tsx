@@ -22,7 +22,7 @@ export default function Skills() {
               <Navigation/>
             </SuspenseWrapper>
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-32 sm:grid-cols-3 lg:gap-16 xl:mt-32">
+				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 mb-10 sm:mt-32 sm:grid-cols-3 lg:gap-16 xl:mt-32">
 					{skills.map((skill) => (
 						<Card key={skill.name}>
 							<Link
